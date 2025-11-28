@@ -1,0 +1,61 @@
+.input-section {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    gap: 10px;
+    margin-left: 0;
+    margin-top: 10px;
+}
+
+.top-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+}
+
+#task-title-input {
+  padding: 10px;
+  font-weight: bold;
+  border: 1px solid #cccccc;
+  border-radius: 4px 4px 0 0;
+  margin-bottom: 5px;
+}
+
+#task-desc-input {
+  padding: 10px;
+  font-weight: bold;
+  border: 1px solid #cccccc;
+  border-radius: 0 0 4px 4px;
+  resize: vertical;
+  margin-bottom: 10px;
+}
+
+.task-item {
+  display: flex;
+  font-weight: bold;
+  flex-direction: column;
+  padding: 10px;
+  border-bottom: 1px solid #eeeeee07;
+}
+
+.task-title {
+  font-weight: bold;
+  cursor: pointer;
+  margin-bottom: 5px;
+}
+
+.task-desc {
+  font-size: 0.9em;
+  font-weight: bold;
+  color: #666;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.task-desc:empty::before {
+  content: "No description";
+  font-weight: bold;
+  color: #ccc;
+}
+
